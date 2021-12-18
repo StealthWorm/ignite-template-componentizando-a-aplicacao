@@ -1,0 +1,66 @@
+.movie-card {
+  position: relative;
+  transition: all 0.5s;
+
+  &:hover {
+    background: rgb(51, 51, 51);
+    box-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(177, 17, 163) 0px 0px 2px, rgb(255, 143, 208) 0px 0px 20px, rgb(99, 0, 124) 0px -18px 40px;
+    transform: scale(1.1);
+  } 
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+    background: rgba(31, 34, 41, 0.5);
+
+    .movie-info {
+      max-width: 12.31rem;
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+  
+      > span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fbfbfb;
+  
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+      }
+  
+      .meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  
+        margin-bottom: 1rem;
+  
+        div {
+          display: flex;
+          align-items: center;
+  
+          font-weight: 600;
+          color: var(--gray);
+  
+          svg {
+            color: var(--yellow);
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
